@@ -1,0 +1,117 @@
+.page-footer {
+  background-color: $heroBgColor;
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  &__wrapp-flex {
+    @include centeredFlex(flex, baseline);
+  }
+
+  &__wrapp-contacts {
+    margin-right: 70px;
+    white-space: nowrap;
+  }
+}
+
+.page-footer__link {
+  @include transition(color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $secondTextColor;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $hoverColor;
+  }
+
+  &.opacity-link:hover,
+  &.opacity-link:focus {
+    color: $hoverColor;
+  }
+}
+
+.page-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.page-footer__link.opacity-link {
+  color: $lightGreyColorFooter;
+}
+
+.page-footer__lead {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $secondTextColor;
+}
+
+.page-footer__social-list {
+  display: flex;
+}
+
+.page-footer__social-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.page-footer__social-link {
+  @include centeredFlex(flex);
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: $darkGreyColor;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $hoverColor;
+  }
+}
+
+.page-footer__wrapp-icon {
+  margin-right: auto;
+}
+
+.page-footer__social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.page-footer__input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: inherit;
+  color: $secondTextColor;
+  outline: transparent;
+
+  &::placeholder {
+    color: $secondTextColor;
+  }
+
+  &:focus {
+    outline: transparent;
+    border-color: $hoverColor;
+    transition: border-color 250ms $function-cubic;
+  }
+}
+
+.subscribe-btn__icon {
+  margin-left: 10px;
+}

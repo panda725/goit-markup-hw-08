@@ -1,0 +1,26 @@
+.button {
+  @include centeredFlex(inline-flex);
+
+  min-width: 200px;
+  min-height: 50px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+  background-color: $primaryBtnColor;
+  color: $secondTextColor;
+  cursor: pointer;
+
+  @include transitionNew(background-color, null, null, $function-cubic, 250ms);
+
+  &:hover,
+  &:focus {
+    background-color: $hoverColor;
+  }
+}

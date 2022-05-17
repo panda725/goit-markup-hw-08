@@ -1,0 +1,38 @@
+.filters {
+  @include centeredFlex(flex);
+  margin-bottom: 50px;
+
+  &__button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primaryTextColor;
+
+    padding: 6px 22px;
+    border-radius: 4px;
+    border-style: none;
+
+    @include transitionNew(color, background-color, box-shadow, $function-cubic, 250ms);
+
+    cursor: pointer;
+
+    &--current {
+      background-color: $hoverColor;
+      color: $secondTextColor;
+    }
+
+    &:hover,
+    &:focus {
+      color: $secondTextColor;
+      background-color: $hoverColor;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}
+
+.filters__item:not(:first-child) {
+  margin-left: 8px;
+}

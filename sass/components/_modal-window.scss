@@ -1,0 +1,40 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 530px;
+  min-height: 580px;
+
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $function-cubic;
+
+  background-color: $secondTextColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  &__button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    @include centeredFlex(flex);
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid $closeBorderModal;
+    border-radius: 50%;
+    background-color: inherit;
+
+    transition: fill 250ms $function-cubic, transform 500ms $function-cubic;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      fill: $hoverColor;
+      transform: rotate(180deg);
+    }
+  }
+}

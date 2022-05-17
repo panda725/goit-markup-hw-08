@@ -1,0 +1,38 @@
+// @mixin имя(параметры) {}
+// вызов mixin @include ;
+
+@mixin centeredFlex($type, $align: center) {
+  display: $type;
+  align-items: $align;
+  justify-content: center;
+}
+
+@mixin transition($properties...) {
+  transition: 250ms $function-cubic 0s;
+  transition-property: $properties;
+}
+
+@mixin transitionNew($one, $two, $three, $func, $time) {
+  transition-timing-function: $func;
+  transition-duration: $time;
+  transition-property: $one, $two, $three;
+}
+
+@mixin list($fx, $fw, $mr, $mb, $ml, $mt, $m) {
+  display: $fx;
+  flex-wrap: $fw;
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+  margin-top: $mt;
+  margin: $m;
+}
+
+@mixin item($mr, $mb, $ml, $mt, $m, $q, $gap) {
+  margin-right: $mr;
+  margin-bottom: $mb;
+  margin-left: $ml;
+  margin-top: $mt;
+  margin: $m;
+  flex-basis: calc(100% / #{$q} - #{$gap});
+}
