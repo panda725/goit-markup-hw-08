@@ -1,0 +1,6 @@
+.section__title {
+  @media screen and (max-width: $mobile) {
+    @include font(28px, 700, 33px, 0.03em, null, center);
+    margin-bottom: 30px;
+  }
+}

@@ -1,30 +1,30 @@
-.portfolio-overplay {
-  position: relative;
-  overflow: hidden;
-}
+// .portfolio-overplay {
+//   position: relative;
+//   overflow: hidden;
+// }
 
-.portfolio-overplay__text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 63px 24px;
-  overflow: auto;
+// .portfolio-overplay__text {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   margin: 0;
+//   padding: 63px 24px;
+//   overflow: auto;
 
-  transform: translateY(101%);
+//   transform: translateY(101%);
 
-  @include transitionNew(transform, background-color, null, $function-cubic, 250ms);
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
+//   @include transitionNew(transform, background-color, null, $function-cubic, 250ms);
+//   font-size: 18px;
+//   line-height: 1.55;
+//   letter-spacing: 0.03em;
 
-  color: $secondTextColor;
-  background-color: $overlayBgColor;
-}
+//   color: $secondTextColor;
+//   background-color: $overlayBgColor;
+// }
 
-.portfolio-list__link:hover .portfolio-overplay__text,
-.portfolio-list__link:focus .portfolio-overplay__text {
-  transform: translateY(0);
-}
+// .portfolio-list__link:hover .portfolio-overplay__text,
+// .portfolio-list__link:focus .portfolio-overplay__text {
+//   transform: translateY(0);
+// }

@@ -1,12 +1,10 @@
 .ourteam {
-  $ourteamBgColor: #f5f4fa;
   &--bg-grey {
     background-color: $ourteamBgColor;
   }
 }
 
 .team-card {
-  display: flex;
   text-align: center;
 
   &__content {
@@ -17,22 +15,9 @@
   &__name {
     margin-bottom: 10px;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+    @include font(16px, 500, 19px, 0.03em, null, center);
+    font-family: 'Roboto';
   }
-}
-
-.team-card__post {
-  margin-top: 0;
-  margin-bottom: 16px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: $lightGreyColor;
 }
 
 .team-card__item {
@@ -42,21 +27,26 @@
   border-radius: 0px 0px 4px 4px;
 
   &:not(:nth-child(4)) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
-.social-team-icon {
-  @include centeredFlex(flex);
+.team-card__post {
+  margin-top: 0;
+  margin-bottom: 16px;
+  @include font(16px, null, 19px, 0.03em, $lightGreyColor, center);
 }
 
 .social-team-icon__item {
+  display: inline-block;
+
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
 
 .social-team-icon__svg {
+  text-align: center;
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -64,14 +54,13 @@
 
 .social-team-icon__link {
   @include centeredFlex(flex);
-
   text-decoration: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   color: $greyIconColor;
 
-  @include transition(color, background-color);
+  @include transitionNew(color, background-color, null, $function-cubic, 250ms);
 
   &:hover,
   &:focus {

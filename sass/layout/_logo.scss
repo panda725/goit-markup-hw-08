@@ -1,23 +1,16 @@
 .logo {
-  @include centeredFlex(flex);
-
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.38;
-  letter-spacing: 0.03em;
   text-decoration: none;
-
   color: $logoHeaderColor;
 
   &__accent {
     color: $logoCurrentColor;
   }
-}
 
-.page-footer__logo {
-  display: block;
-  margin-bottom: 20px;
-  font-style: normal;
-  color: $logoFooterColor;
+  @media screen and (max-width: $tablet) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @include font(24px, 700, 28px, 0.03em, null);
+  }
 }

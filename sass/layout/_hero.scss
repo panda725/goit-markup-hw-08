@@ -1,30 +1,24 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
   background-color: $heroBgColor;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../images/hero-bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-
-  color: $secondTextColor;
   text-align: center;
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 .hero__title {
-  width: 696px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (max-width: $tablet) {
+    @include font(26px, 900, 42px, 0.06em, $secondTextColor, center);
+    max-width: 100%;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 }
+// до этого 576px это мобильное устройство
+// 577 - 768 таблет

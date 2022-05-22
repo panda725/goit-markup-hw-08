@@ -1,5 +1,7 @@
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/breakpoints';
+@import './utils/placeholders';
 
 @import './base/normalize';
 @import './base/visual-hidden';
@@ -7,11 +9,13 @@
 @import './base/section';
 
 @import './components/container';
+@import './components/title';
 @import './components/button';
 @import './layout/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
 
+@import './layout/menu-burger';
 @import './layout/page-header';
 @import './layout/logo';
 @import './layout/hero';

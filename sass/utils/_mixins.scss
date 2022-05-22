@@ -1,6 +1,3 @@
-// @mixin имя(параметры) {}
-// вызов mixin @include ;
-
 @mixin centeredFlex($type, $align: center) {
   display: $type;
   align-items: $align;
@@ -35,4 +32,17 @@
   margin-top: $mt;
   margin: $m;
   flex-basis: calc(100% / #{$q} - #{$gap});
+}
+
+@mixin font($fz, $fw, $lh, $lc, $col, $ta: left) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh/$fz;
+  letter-spacing: $lc;
+  color: $col;
+  text-align: $ta;
+}
+//
+@mixin section($ptb, $prl) {
+  padding: $ptb $prl;
 }

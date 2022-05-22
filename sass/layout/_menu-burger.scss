@@ -1,0 +1,138 @@
+@media screen and (min-width: 767px) {
+  .mobile-menu,
+  .menu-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include transitionNew(fill, null, null, $function-cubic, 250ms);
+
+    &:hover,
+    &:focus {
+      fill: $hoverColor;
+    }
+
+    &--close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+  }
+
+  .mobile-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 25px;
+    padding-right: 25px;
+    z-index: 2;
+    opacity: 1;
+    background-color: $secondTextColor;
+
+    @include transitionNew(transform, null, null, $function-cubic, 250ms);
+
+    &.is-hidden {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  }
+
+  .wrapp-mobile-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav {
+    flex-grow: 3;
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &__link {
+      @include font(40px, 500, 47px, 0.02em, $primaryTextColor);
+      @include transitionNew(color, null, null, $function-cubic, 250ms);
+      text-decoration: none;
+
+      &--current {
+        color: $hoverColor;
+      }
+
+      &:hover,
+      &:focus {
+        color: $hoverColor;
+      }
+    }
+  }
+
+  .mobile-contacts {
+    flex-grow: 1;
+
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  .mobile-contacts__link {
+    color: $lightGreyColor;
+    text-decoration: none;
+
+    @include transitionNew(color, null, null, $function-cubic, 250ms);
+
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+    }
+
+    &--tel {
+      @include font(34px, 500, 40px, 0.02em, null);
+    }
+
+    &--mail {
+      @include font(24px, 500, 28px, 0.02em, null);
+    }
+  }
+}
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__item:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    margin-left: 10px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+
+  &__link {
+    text-decoration: none;
+    @include font(18px, 500, 22px, 0.02em, $hoverColor);
+  }
+}

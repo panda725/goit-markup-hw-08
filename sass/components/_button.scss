@@ -1,8 +1,8 @@
 .button {
   @include centeredFlex(inline-flex);
 
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   padding: 0;
 
   font-weight: 700;

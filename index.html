@@ -14,56 +14,97 @@
   <body>
     <!-- header -->
     <header class="page-header">
-      <div class="page-header__wrapp-navigation container">
-        <nav class="header-nav">
-          <a class="logo" href="index.html"> <span class="logo__accent">Web</span>Studio </a>
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a
-                class="header-nav__link header-nav__link--current"
-                aria-current="page"
-                href="index.html"
-              >
-                Студия
-              </a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="container header_container">
+        <a class="logo" href="index.html"> <span class="logo__accent">Web</span>Studio </a>
+        <button
+          type="button"
+          class="menu-button menu-button--open"
+          aria-expanded="false"
+          data-mobile-open
+        >
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+            <use
+              class="menu-button__icon-menu_open"
+              href="./images/icons.svg#icon-mobile-menu_open"
+            ></use>
+          </svg>
+        </button>
 
-        <!-- header contacts -->
+        <!-- mobile menu -->
+        <div class="mobile-menu is-hidden" data-mobile>
+          <div class="wrapp-mobile-menu">
+            <button
+              type="button"
+              class="menu-button menu-button--close"
+              aria-expanded="true"
+              data-mobile-close
+            >
+              <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                <use
+                  class="menu-button__icon-menu_close"
+                  href="./images/icons.svg#icon-mobile-menu_close"
+                ></use>
+              </svg>
+            </button>
 
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mailbox"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-cell-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <!-- mobile-navigation -->
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                  <a href="" class="mobile-nav__link mobile-nav__link--current">Студия</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a href="portfolio.html" class="mobile-nav__link">Портфолио</a>
+                </li>
+                <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <!-- mobile-contacts -->
+            <ul class="mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-contacts__link mobile-contacts__link--mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <!-- mobile-socials -->
+            <ul class="mobile-socials">
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link">Instagram</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link">Twitter</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link">Facebook</a>
+              </li>
+              <li class="mobile-socials__item">
+                <a href="" class="mobile-socials__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+
+    <!-- main content -->
 
     <main>
       <!-- section hero -->
       <section class="hero">
-        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button" data-modal-open>Заказать услугу</button>
+        <div class="container wrapp-hero">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
+        </div>
       </section>
 
       <!-- section feature -->
@@ -120,7 +161,7 @@
       </section>
 
       <!-- section about job -->
-      <section class="section section--no-padding-top">
+      <section class="section section--no-padding-top about-job-hidden">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="job-descr__list">
@@ -152,7 +193,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-card">
             <li class="team-card__item">
-              <img src="./images/imgourteam1.jpg" alt="Igor Demianenko" width="270" />
+              <img src="./images/imgourteam1.jpg" alt="Igor Demianenko" />
               <div class="team-card__content">
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__post">Product Designer</p>
@@ -210,7 +251,7 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img src="./images/imgourteam2.jpg" alt="Olga Repina" width="270" />
+              <img src="./images/imgourteam2.jpg" alt="Olga Repina" />
               <div class="team-card__content">
                 <h3 class="team-card__name">Ольга Репина</h3>
                 <p class="team-card__post">Frontend Developer</p>
@@ -267,7 +308,7 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img src="./images/imgourteam3.jpg" alt="Nikolai Tarasov" width="270" />
+              <img src="./images/imgourteam3.jpg" alt="Nikolai Tarasov" />
               <div class="team-card__content">
                 <h3 class="team-card__name">Николай Тарасов</h3>
                 <p class="team-card__post">Marketing</p>
@@ -324,7 +365,7 @@
               </div>
             </li>
             <li class="team-card__item">
-              <img src="./images/imgourteam4.jpg" alt="Mikhail Ermakov" width="270" />
+              <img src="./images/imgourteam4.jpg" alt="Mikhail Ermakov" />
               <div class="team-card__content">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
                 <p class="team-card__post">UI Designer</p>
@@ -383,6 +424,7 @@
           </ul>
         </div>
       </section>
+
       <!-- section customers -->
       <section class="section">
         <div class="container">
@@ -437,13 +479,13 @@
 
     <!-- footer -->
     <footer class="page-footer">
-      <div class="page-footer__wrapp-flex container">
+      <div class="container page-footer__wrapp-flex">
+        <a class="logo page-footer__logo" href="index.html">
+          <span class="logo__accent">Web</span>Studio
+        </a>
         <div class="page-footer__wrapp-contacts">
-          <a class="logo page-footer__logo" href="index.html">
-            <span class="logo__accent">Web</span>Studio
-          </a>
           <address>
-            <ul>
+            <ul class="page-footer_list">
               <li class="page-footer__item">
                 <a
                   class="page-footer__link"
@@ -466,6 +508,7 @@
             </ul>
           </address>
         </div>
+
         <div class="page-footer__wrapp-icon">
           <b class="page-footer__lead">Присоединяйтесь</b>
           <ul class="page-footer__social-list">
@@ -521,7 +564,7 @@
     </footer>
 
     <!-- backdrop -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
           class="modal__button"
@@ -594,8 +637,9 @@
           <button class="button form-btn--centered" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

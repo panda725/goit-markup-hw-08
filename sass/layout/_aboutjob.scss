@@ -1,5 +1,11 @@
 $job-descr-text: rgba(47, 48, 58, 0.8); //цвет нижнего overlay
 
+@media screen and (max-width: $desktop) {
+  .about-job-hidden {
+    display: none;
+  }
+}
+
 .job-descr__list {
   @include centeredFlex(flex);
 }
