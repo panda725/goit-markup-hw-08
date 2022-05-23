@@ -13,45 +13,23 @@
   </head>
   <body>
     <!-- header -->
+
     <header class="page-header">
-      <div class="page-header__wrapp-navigation container">
-        <nav class="header-nav">
-          <a class="logo" href="index.html"> <span class="logo__accent">Web</span>Studio </a>
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" aria-current="page" href="index.html"> Студия </a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--current" href="portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <!-- header contacts -->
-
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mailbox"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-cell-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+      <div class="container header_container">
+        <a class="logo" href="index.html"> <span class="logo__accent">Web</span>Studio </a>
+        <button
+          type="button"
+          class="menu-button menu-button--open"
+          aria-expanded="false"
+          data-mobile-open
+        >
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+            <use
+              class="menu-button__icon-menu_open"
+              href="./images/icons.svg#icon-mobile-menu_open"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -83,7 +61,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio.jpg" alt="website" />
+                  <img src="./images/imgportfolio.jpg" alt="website" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -100,7 +78,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio2.jpg" alt="design" />
+                  <img src="./images/imgportfolio2.jpg" alt="design" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -117,7 +95,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio3.jpg" alt="application" />
+                  <img src="./images/imgportfolio3.jpg" alt="application" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -134,7 +112,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio4.jpg" alt="application" />
+                  <img src="./images/imgportfolio4.jpg" alt="application" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -151,7 +129,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio5.jpg" alt="application" />
+                  <img src="./images/imgportfolio5.jpg" alt="application" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -168,7 +146,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio6.jpg" alt="website" />
+                  <img src="./images/imgportfolio6.jpg" alt="website" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -185,7 +163,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio7.jpg" alt="design" />
+                  <img src="./images/imgportfolio7.jpg" alt="design" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -202,7 +180,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio8.jpg" alt="Marketing" />
+                  <img src="./images/imgportfolio8.jpg" alt="Marketing" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -219,7 +197,7 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-overplay">
-                  <img width="370" src="./images/imgportfolio9.jpg" alt="application" />
+                  <img src="./images/imgportfolio9.jpg" alt="application" />
                   <p class="portfolio-overplay__text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -239,13 +217,13 @@
 
     <!-- footer -->
     <footer class="page-footer">
-      <div class="page-footer__wrapp-flex container">
+      <div class="container page-footer__wrapp-flex">
+        <a class="logo page-footer__logo" href="index.html">
+          <span class="logo__accent">Web</span>Studio
+        </a>
         <div class="page-footer__wrapp-contacts">
           <address>
-            <a class="logo page-footer__logo" href="index.html">
-              <span class="logo__accent">Web</span>Studio
-            </a>
-            <ul>
+            <ul class="page-footer_list">
               <li class="page-footer__item">
                 <a
                   class="page-footer__link"
@@ -268,6 +246,7 @@
             </ul>
           </address>
         </div>
+
         <div class="page-footer__wrapp-icon">
           <b class="page-footer__lead">Присоединяйтесь</b>
           <ul class="page-footer__social-list">
@@ -321,5 +300,73 @@
         </form>
       </div>
     </footer>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu is-hidden" data-mobile>
+      <div class="wrapp-mobile-menu">
+        <button
+          type="button"
+          class="menu-button menu-button--close"
+          aria-expanded="true"
+          data-mobile-close
+        >
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+            <use
+              class="menu-button__icon-menu_close"
+              href="./images/icons.svg#icon-mobile-menu_close"
+            ></use>
+          </svg>
+        </button>
+
+        <!-- mobile-navigation -->
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="index.html" class="mobile-nav__link">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="portfolio.html" class="mobile-nav__link mobile-nav__link--current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- mobile-contacts -->
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--tel"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-contacts__link mobile-contacts__link--mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <!-- mobile-socials -->
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Instagram</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item">
+            <a href="" class="mobile-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
