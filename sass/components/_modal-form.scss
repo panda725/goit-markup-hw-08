@@ -9,6 +9,10 @@
   letter-spacing: 0.03em;
 
   color: $primaryTextColor;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 .form-field {
@@ -37,7 +41,7 @@
 
   color: $lightGreyColor;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
   }
 }
@@ -97,7 +101,7 @@
     letter-spacing: 0.03em;
     color: $lightGreyColor;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 1199px) {
       font-size: 12px;
     }
   }

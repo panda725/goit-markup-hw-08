@@ -1,10 +1,19 @@
 .customers {
   @include centeredFlex(flex);
-
-  @include list(flex, wrap, null, null, null, null, -15px);
+  @include list(null, wrap, null, null, null, null, -15px);
 
   &__item {
     @include item(null, null, null, null, 15px, $deskq, $gapitem);
+
+    // mobile
+    @media screen and (max-width: 768px) {
+      @include item(null, null, null, null, 15px, $tabq, $gapitem);
+    }
+
+    // tablet
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      @include item(null, null, null, null, 15px, $customTabq, $gapitem);
+    }
   }
 
   &__icon {
@@ -17,7 +26,6 @@
 .customers__link {
   @include centeredFlex(flex);
 
-  width: 170px;
   height: 92px;
 
   text-decoration: none;
@@ -31,5 +39,10 @@
   &:focus {
     color: $hoverColor;
     border-color: $hoverColor;
+  }
+
+  // desktop
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }

@@ -5,7 +5,15 @@
 }
 
 .team-card {
-  text-align: center;
+  // tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include list(flex, wrap, null, null, null, null, -15px);
+  }
+
+  // desktop
+  @media screen and (min-width: $desktop) {
+    @include centeredFlex(flex);
+  }
 
   &__content {
     padding-top: 30px;
@@ -14,27 +22,43 @@
 
   &__name {
     margin-bottom: 10px;
-
     @include font(16px, 500, 19px, 0.03em, null, center);
-    font-family: 'Roboto';
   }
 }
 
 .team-card__item {
+  // tablet
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include item(null, null, null, null, 15px, $tabq, $gapitem);
+  }
+  // mobile
+  @media screen and (max-width: 767px) {
+    &:not(:nth-child(4)) {
+      margin-bottom: 30px;
+    }
+  }
+  // desktop
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    &:not(:nth-child(4)) {
+      margin-right: 30px;
+    }
+  }
+
   background: $secondTextColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  &:not(:nth-child(4)) {
-    margin-bottom: 30px;
-  }
 }
 
 .team-card__post {
   margin-top: 0;
   margin-bottom: 16px;
   @include font(16px, null, 19px, 0.03em, $lightGreyColor, center);
+}
+
+.social-team-icon {
+  text-align: center;
 }
 
 .social-team-icon__item {

@@ -1,6 +1,6 @@
 $job-descr-text: rgba(47, 48, 58, 0.8); //цвет нижнего overlay
 
-@media screen and (max-width: $desktop) {
+@media screen and (max-width: 1199px) {
   .about-job-hidden {
     display: none;
   }

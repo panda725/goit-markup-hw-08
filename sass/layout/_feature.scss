@@ -1,7 +1,31 @@
+.feature {
+  @include list(flex, wrap, null, null, null, null, -15px);
+}
+
+.feature__item {
+  // mobile
+  @media screen and (min-width: 320px) {
+    @include item(null, null, null, null, 15px, $mobq, $gapitem);
+  }
+  // tablet
+  @media screen and (min-width: $tablet) {
+    @include item(null, null, null, null, 15px, $tabq, $gapitem);
+  }
+  // desktop
+  @media screen and (min-width: $desktop) {
+    @include item(null, null, null, null, 15px, 4, $gapitem);
+  }
+}
+
 .feature__title {
   @include font(14px, 700, 16px, 0.03em, null, center);
   margin-bottom: 10px;
   text-transform: uppercase;
+
+  // desktop
+  @media screen and (min-width: $desktop) {
+    @include font(14px, null, 16px, null, null);
+  }
 }
 
 .feature__subtitle {
@@ -18,12 +42,4 @@
   border-radius: 4px;
 
   background-color: $bgColorFeature;
-}
-
-.feature__item {
-  @media screen and (max-width: $tablet) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
 }

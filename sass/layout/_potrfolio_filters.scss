@@ -11,7 +11,7 @@
   &__item {
     display: inline-block;
     @media screen and (max-width: 767px) {
-      @include item(8px, 15px, null, null, null, 2, $gapitem2);
+      @include item(8px, 15px, null, null, null, 2, $gapitem);
     }
   }
 

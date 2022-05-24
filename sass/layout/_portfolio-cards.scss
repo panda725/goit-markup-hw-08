@@ -42,9 +42,11 @@
 }
 
 .portfolio-list__link {
-  display: block;
-  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
+  text-decoration: none;
   transition: filter 250ms $function-cubic;
 
   &:hover,
@@ -54,6 +56,7 @@
 }
 
 .portfolio-list__wrap-text {
+  flex-grow: 1;
   padding: 20px 24px;
 
   background: $secondTextColor;

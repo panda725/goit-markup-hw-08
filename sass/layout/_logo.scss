@@ -8,9 +8,22 @@
     color: $logoCurrentColor;
   }
 
+  // mobile
   @media screen and (max-width: $tablet) {
     padding-top: 16px;
     padding-bottom: 16px;
+
     @include font(24px, 700, 28px, 0.03em, null);
+  }
+  // tablet
+  @media screen and (min-width: $tablet) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    @include font(24px, 700, 28px, 0.03em, null);
+  }
+  // desktop
+  @media screen and (min-width: $desktop) {
+    @include font(26px, 700, 31px, 0.03em, null);
   }
 }

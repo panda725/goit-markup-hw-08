@@ -32,6 +32,7 @@
   margin-top: $mt;
   margin: $m;
   flex-basis: calc(100% / #{$q} - #{$gap});
+  // (100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
 }
 
 @mixin font($fz, $fw, $lh, $lc, $col, $ta: left) {

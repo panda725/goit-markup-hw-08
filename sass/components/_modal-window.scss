@@ -35,9 +35,9 @@
     }
   }
 
-  @media screen and (max-width: $tablet) {
-    width: 450px;
-    max-width: 100%;
-    height: auto;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    max-width: 450px;
+    height: 609px;
   }
 }
