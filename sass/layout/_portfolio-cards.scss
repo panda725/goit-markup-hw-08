@@ -2,12 +2,18 @@
   @include list(flex, wrap, null, null, null, null, -15px);
 
   &__item {
+    // mobile
     @media screen and (max-width: $tablet) {
       @include item(null, null, null, null, 15px, $mobq, $gapitem);
     }
-
+    // tablet
     @media screen and (min-width: $tablet) {
       @include item(null, null, null, null, 15px, $tabq, $gapitem);
+    }
+
+    // tablet
+    @media screen and (min-width: $desktop) {
+      @include item(null, null, null, null, 15px, $customTabq, $gapitem);
     }
 
     //  margin-right: 30px;

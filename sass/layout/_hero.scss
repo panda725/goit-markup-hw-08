@@ -1,8 +1,46 @@
 .hero {
-  background-color: $heroBgColor;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
   text-align: center;
+  background-size: cover;
+  background-color: $heroBgColor;
 
-  // mobile and tablet
+  // mobile hero background
+  @media screen and (max-width: 576px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero-adaptive/hero-mobile.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/hero-adaptive/hero-mobile@2x.jpg');
+    }
+  }
+
+  // tablet hero background
+  @media screen and (min-width: 577px) and (max-width: 960px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero-adaptive/hero-tablet.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/hero-adaptive/hero-tablet@2x.jpg');
+    }
+  }
+
+  // desktop hero background
+  @media screen and (min-width: 960px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('/images/hero-adaptive/hero-desktop.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('/images/hero-adaptive/hero-desktop@2x.jpg');
+    }
+  }
+
+  // mobile and tablet padding
   @media screen and (max-width: $desktop) {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -10,12 +48,9 @@
 
   // desktop
   @media screen and (min-width: $desktop) {
-    max-width: 100%;
     height: 600px;
-    width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin: 0 auto;
   }
 }
 
@@ -44,4 +79,4 @@
 }
 
 // до этого 576px это мобильное устройство
-// 577 - 768 таблет
+// 577 - 960 таблет
