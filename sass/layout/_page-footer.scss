@@ -5,7 +5,7 @@
   background-color: $heroBgColor;
 
   // tablet
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     text-align: center;
 
     &__wrapp-contacts {
@@ -47,7 +47,7 @@
 
 .wrapp-footer-info {
   // tablet
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -168,6 +168,7 @@
     max-width: 100%;
     display: inline-block;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 

@@ -78,8 +78,8 @@
 }
 
 .header-nav__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  &:not(:first-child) {
+    margin-left: 50px;
   }
 }
 
@@ -94,7 +94,6 @@
 
 .header-contacts__link {
   @include centeredFlex(inline-flex);
-  padding: 5px 0;
 
   color: $lightGreyColor;
   font-size: 12px;
@@ -113,6 +112,7 @@
   // desktop
   @media screen and (min-width: $desktop) {
     font-size: 14px;
+    padding: 32px 0;
   }
 }
 

@@ -41,7 +41,7 @@
 
   color: $lightGreyColor;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     font-size: 12px;
   }
 }
@@ -101,7 +101,7 @@
     letter-spacing: 0.03em;
     color: $lightGreyColor;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
       font-size: 12px;
     }
   }

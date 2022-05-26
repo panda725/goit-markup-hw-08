@@ -6,7 +6,7 @@
 
 .team-card {
   // tablet
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     @include list(flex, wrap, null, null, null, null, -15px);
   }
 
@@ -28,7 +28,7 @@
 
 .team-card__item {
   // tablet
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     @include item(null, null, null, null, 15px, $tabq, $gapitem);
   }
   // mobile

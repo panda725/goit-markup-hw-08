@@ -1,12 +1,13 @@
 .section__title {
   margin-bottom: 30px;
   // mobile & tablet
-  @media (max-width: 1199px) {
+  @media (max-width: 1199.98px) {
     @include font(28px, 700, 33px, 0.03em, null, center);
   }
 
   //  desktop
   @media (min-width: $desktop) {
     @include font(36px, 700, 42px, 0.03em, null, center);
+    margin-bottom: 50px;
   }
 }
