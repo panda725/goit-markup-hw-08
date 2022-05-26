@@ -10,9 +10,9 @@
 }
 
 @mixin transitionNew($one, $two, $three, $func, $time) {
+  transition-property: $one, $two, $three;
   transition-timing-function: $func;
   transition-duration: $time;
-  transition-property: $one, $two, $three;
 }
 
 @mixin list($fx, $fw, $mr, $mb, $ml, $mt, $m) {

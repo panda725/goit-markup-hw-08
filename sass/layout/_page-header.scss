@@ -56,7 +56,7 @@
   text-decoration: none;
   color: $primaryTextColor;
 
-  @include transition(color);
+  @include transitionNew(color, null, null, $function-cubic, 250ms);
 
   &:hover,
   &:focus,
@@ -102,17 +102,35 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  @include transition(color);
+  @include transitionNew(color, null, null, $function-cubic, 250ms);
 
   &:hover,
   &:focus {
     color: $hoverColor;
   }
 
+  // tablet
+  @media screen and (max-width: 1199.98px) {
+    &--top-padding {
+      padding-top: 16px;
+    }
+    &--bottom-padding {
+      padding-bottom: 16px;
+    }
+  }
+
   // desktop
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     padding: 32px 0;
+  }
+}
+
+.header-contacts__item {
+  @media screen and (max-width: 1199.98px) {
+    &--margin-bottom {
+      margin-bottom: 8px;
+    }
   }
 }
 

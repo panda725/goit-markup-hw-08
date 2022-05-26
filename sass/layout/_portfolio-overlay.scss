@@ -15,13 +15,14 @@
 
   transform: translateY(101%);
 
-  @include transitionNew(transform, background-color, null, $function-cubic, 250ms);
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
 
   color: $secondTextColor;
   background-color: $overlayBgColor;
+
+  @include transitionNew(transform, background-color, null, $function-cubic, 250ms);
 }
 
 .portfolio-list__link:hover .portfolio-overplay__text,

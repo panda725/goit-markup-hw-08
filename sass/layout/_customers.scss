@@ -33,7 +33,7 @@
   border: 1px solid $greyIconColor;
   border-radius: 4px;
 
-  @include transition(color, border-color);
+  @include transitionNew(color, border-color, null, $function-cubic, 250ms);
 
   &:hover,
   &:focus {

@@ -11,10 +11,6 @@
     &__wrapp-contacts {
       margin-bottom: 60px;
     }
-
-    &__wrapp-icon {
-      margin-bottom: 60px;
-    }
   }
 
   // desktop
@@ -46,6 +42,11 @@
 }
 
 .wrapp-footer-info {
+  // mobile
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
+
   // tablet
   @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
     display: flex;
@@ -55,6 +56,7 @@
     padding-left: 61px;
     padding-right: 75px;
   }
+
   // desktop
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -76,8 +78,6 @@
 }
 
 .page-footer__link {
-  @include transition(color);
-
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -97,6 +97,8 @@
   &.opacity-link:focus {
     color: $hoverColor;
   }
+
+  @include transitionNew(color, null, null, $function-cubic, 250ms);
 }
 
 .page-footer__item:not(:last-child) {
@@ -127,12 +129,12 @@
   border-radius: 50%;
   background-color: $darkGreyColor;
 
-  @include transition(background-color);
-
   &:hover,
   &:focus {
     background-color: $hoverColor;
   }
+
+  @include transitionNew(background-color, null, null, $function-cubic, 250ms);
 }
 
 .page-footer__input {
@@ -175,7 +177,3 @@
 .subscribe-btn__icon {
   margin-left: 10px;
 }
-
-// .page-footer__wrapp-icon {
-//   margin-right: auto;
-// }
