@@ -542,14 +542,14 @@ img {
           transition-duration: 250ms;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767.98px) {
   .mobile-menu,
   .menu-button {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .menu-button {
     display: inline-block;
     width: 40px;
@@ -730,7 +730,7 @@ img {
   position: relative;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .header_container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -762,13 +762,13 @@ img {
   margin-left: 88px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .header-nav {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .header-contacts {
     display: none;
   }
@@ -1224,7 +1224,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team-card__item:not(:nth-child(4)) {
     margin-bottom: 30px;
   }
@@ -1624,7 +1624,7 @@ img {
   display: inline-block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .filters__item {
     margin-right: 8px;
     margin-bottom: 15px;

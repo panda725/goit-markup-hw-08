@@ -8,7 +8,7 @@
   position: relative;
 
   // mobile
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     justify-content: space-between;
   }
   // tablet
@@ -24,14 +24,14 @@
 }
 
 .header-nav {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
 
 .header-contacts {
   // mobile
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 
