@@ -45,7 +45,7 @@
     opacity: 1;
     background-color: $secondTextColor;
 
-    @include transitionNew(transform, null, null, $function-cubic, 250ms);
+    @include transitionNew(transform, opacity, null, $function-cubic, 250ms);
 
     &.is-hidden {
       opacity: 0;
